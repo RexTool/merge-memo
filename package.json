@@ -1,0 +1,32 @@
+{
+  "name": "merge-memo",
+  "version": "1.0.0",
+  "description": "A GitHub Action that can create documentation of whenever a repository is merged.",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "npm run typecheck",
+    "typecheck": "tsc --noEmit",
+    "build": "ncc build src/index.ts -o dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RexTool/merge-memo.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/RexTool/merge-memo/issues"
+  },
+  "homepage": "https://github.com/RexTool/merge-memo#readme",
+  "dependencies": {
+    "@actions/core": "2.0.2",
+    "@actions/github": "7.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.6",
+    "@vercel/ncc": "^0.45.0",
+    "typescript": "5.9.3"
+  }
+}

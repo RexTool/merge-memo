@@ -1,0 +1,27 @@
+
+name: MergeMemo
+
+on:
+  pull_request:
+    types: [closed]
+
+  issues:
+    types: [closed]
+
+permissions:
+  contents: read
+
+jobs:
+  document:
+    if: >-
+      github.event_name == 'issues' ||
+      github.event.pull_request.merged == true
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Run MergeMemo
+        uses: ./

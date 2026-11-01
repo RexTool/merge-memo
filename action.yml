@@ -1,0 +1,9 @@
+name: "MergeMemo"
+
+description: "Automatically document GitHub issues and pull requests"
+
+runs:
+  # GitHub-hosted runners currently support JavaScript actions on Node 20.
+  # Ref: https://docs.github.com/actions/creating-actions/metadata-syntax-for-github-actions#runs
+  using: "node20"
+  main: "dist/index.js"

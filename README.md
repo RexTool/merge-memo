@@ -1,2 +1,7 @@
 # merge-memo
-A GitHub Action that can create documentation of whenever a repository is merged.
+
+## Development
+
+- Install deps: `npm install`
+- Typecheck: `npm run typecheck`
+- Build bundled action: `npm run build` (outputs `dist/index.js`)
